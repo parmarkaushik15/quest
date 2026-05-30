@@ -1,0 +1,670 @@
+/* Quest For Education - Custom Styles */
+
+.quest-logo img {
+    max-height: 58px;
+    width: auto;
+    object-fit: contain;
+}
+
+.offcanvas__logo img,
+.footer-logo img {
+    max-height: 70px;
+    width: auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section[id] {
+    scroll-margin-top: 100px;
+}
+
+.hero-sub .since-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fff;
+    border-radius: 50px;
+    padding: 8px 18px;
+    font-weight: 600;
+    color: #385469;
+    box-shadow: 0 8px 24px rgba(56, 84, 105, 0.12);
+}
+
+.hero-sub .since-badge i {
+    color: #F39F5F;
+}
+
+.course-fee {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 14px;
+    border-radius: 20px;
+    background: rgba(243, 159, 95, 0.15);
+    color: #385469;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/* Events section – normal document flow, no overlap */
+.quest-events-section {
+    margin-top: 0;
+    position: relative;
+    z-index: 1;
+    background: transparent;
+}
+
+.event-card-flyer {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(56, 84, 105, 0.1);
+    background: #fff;
+    border: 1px solid rgba(56, 84, 105, 0.08);
+    height: 100%;
+}
+
+.event-card-flyer-img {
+    background: #f8f4ec;
+    padding: 12px;
+}
+
+.event-card-flyer-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+}
+
+.event-card-body {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.event-card-body h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: #385469;
+}
+
+.event-badge {
+    display: inline-block;
+    width: fit-content;
+    padding: 5px 14px;
+    border-radius: 20px;
+    background: rgba(56, 84, 105, 0.1);
+    color: #385469;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.event-badge-summer {
+    background: rgba(243, 159, 95, 0.18);
+    color: #c96a20;
+}
+
+.quest-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: auto;
+    padding: 14px 28px;
+    border-radius: 50px;
+    background: #F39F5F;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    border: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+    width: fit-content;
+}
+
+.quest-btn:hover {
+    background: #e08a45;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.quest-btn-light {
+    background: #fff;
+    color: #385469;
+}
+
+.quest-btn-light:hover {
+    background: #f0f4f8;
+    color: #385469;
+}
+
+.quest-cta-banner {
+    position: relative;
+    margin-top: 48px;
+    border-radius: 24px;
+    overflow: hidden;
+    min-height: 280px;
+}
+
+.quest-cta-banner-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.quest-cta-banner-bg::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(56, 84, 105, 0.88) 0%, rgba(56, 84, 105, 0.75) 100%);
+}
+
+.quest-cta-banner-content {
+    position: relative;
+    z-index: 1;
+    padding: 56px 24px;
+    color: #fff;
+}
+
+.quest-cta-label {
+    display: inline-block;
+    color: #F39F5F;
+    font-family: "Caveat", cursive;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.quest-cta-banner-content h3 {
+    color: #fff;
+    font-size: clamp(24px, 4vw, 36px);
+    max-width: 720px;
+    margin: 0 auto 12px;
+    line-height: 1.3;
+}
+
+.quest-cta-banner-content p {
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 24px;
+}
+
+.quest-cta-banner-content .quest-btn {
+    margin: 0 auto;
+}
+
+#trainers.team-section-2 {
+    padding-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.event-meta {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px;
+}
+
+.event-meta li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    color: #385469;
+}
+
+.event-meta li i {
+    color: #F39F5F;
+    width: 18px;
+}
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+}
+
+.achievement-item {
+    text-align: center;
+    padding: 24px 16px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 30px rgba(56, 84, 105, 0.08);
+}
+
+.achievement-item h3 {
+    font-size: 32px;
+    color: #F39F5F;
+    margin-bottom: 6px;
+}
+
+.achievement-item p {
+    margin: 0;
+    color: #385469;
+    font-weight: 600;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.contact-section .contact-info-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    height: 100%;
+    box-shadow: 0 8px 30px rgba(56, 84, 105, 0.08);
+}
+
+/* Inquiry card – reference-style contact section */
+.quest-inquiry-card {
+    background: #eef3f8;
+    border-radius: 24px;
+    padding: 40px 40px 32px;
+    box-shadow: 0 16px 48px rgba(56, 84, 105, 0.08);
+}
+
+.quest-inquiry-header {
+    margin-bottom: 28px;
+}
+
+.quest-inquiry-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: #F39F5F;
+    font-size: 28px;
+}
+
+.quest-inquiry-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #385469;
+    margin-bottom: 10px;
+}
+
+.quest-inquiry-title {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(28px, 4vw, 38px);
+    font-weight: 700;
+    color: #1e3344;
+    margin-bottom: 12px;
+    line-height: 1.25;
+}
+
+.quest-inquiry-subtitle {
+    color: #5a7184;
+    font-size: 16px;
+    max-width: 640px;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.quest-channel-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    background: #fff;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+    box-shadow: 0 4px 20px rgba(56, 84, 105, 0.06);
+}
+
+.quest-channel-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: #385469;
+    margin-bottom: 8px;
+}
+
+.quest-channel-numbers {
+    font-size: clamp(20px, 3vw, 26px);
+    font-weight: 700;
+    color: #1e3344;
+}
+
+.quest-channel-numbers a {
+    color: #1e3344;
+    text-decoration: none;
+}
+
+.quest-channel-numbers a:hover {
+    color: #F39F5F;
+}
+
+.quest-channel-sep {
+    margin: 0 10px;
+    color: #b0bec5;
+    font-weight: 400;
+}
+
+.quest-open-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: #f0f6fa;
+    border-radius: 12px;
+    color: #385469;
+    font-weight: 600;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: background 0.3s ease;
+}
+
+.quest-open-link:hover {
+    background: #e2ecf3;
+    color: #385469;
+}
+
+.quest-open-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background: rgba(243, 159, 95, 0.2);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #F39F5F;
+    font-size: 12px;
+}
+
+.quest-inquiry-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+.quest-pill {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    background: #fff;
+    color: #385469;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.25s ease, color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.quest-pill:hover {
+    background: #fff5ef;
+}
+
+.quest-pill.active {
+    background: #fde8d8;
+    color: #1e3344;
+    box-shadow: 0 2px 8px rgba(243, 159, 95, 0.15);
+}
+
+.quest-inquiry-includes h4 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1e3344;
+    margin-bottom: 20px;
+}
+
+.quest-inquiry-includes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 14px;
+}
+
+.quest-inquiry-includes li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    color: #4a6275;
+    font-size: 15px;
+}
+
+.quest-include-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background: #dce8f2;
+    color: #385469;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 14px;
+}
+
+.quest-inquiry-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid rgba(56, 84, 105, 0.12);
+}
+
+.quest-inquiry-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 32px;
+    background: #F39F5F;
+    color: #fff;
+    border-radius: 14px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    font-weight: 700;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.quest-inquiry-cta:hover {
+    background: #e08a45;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.quest-cta-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.quest-response-info {
+    text-align: right;
+}
+
+.quest-response-info strong {
+    display: block;
+    color: #1e3344;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.quest-response-info span {
+    color: #7a919f;
+    font-size: 14px;
+}
+
+@media (max-width: 767px) {
+    .quest-inquiry-card {
+        padding: 28px 20px 24px;
+    }
+
+    .quest-channel-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quest-inquiry-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .quest-response-info {
+        text-align: left;
+    }
+}
+
+.contact-section .contact-info-box h4 {
+    margin-bottom: 20px;
+}
+
+.contact-section .contact-info-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-section .contact-info-box li {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+    align-items: flex-start;
+}
+
+.contact-section .contact-info-box li i {
+    color: #F39F5F;
+    margin-top: 4px;
+}
+
+.contact-form-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(56, 84, 105, 0.08);
+}
+
+.contact-form-box .form-control,
+.contact-form-box textarea {
+    border: 1px solid rgba(56, 84, 105, 0.15);
+    border-radius: 10px;
+    padding: 12px 16px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.contact-form-box textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.map-wrap {
+    border-radius: 16px;
+    overflow: hidden;
+    min-height: 280px;
+    background: #eef3f7;
+}
+
+.map-wrap iframe {
+    width: 100%;
+    height: 280px;
+    border: 0;
+}
+
+.whatsapp-float {
+    position: fixed;
+    right: 24px;
+    bottom: 90px;
+    z-index: 999;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #25D366;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+    color: #fff;
+}
+
+.form-success {
+    display: none;
+    padding: 12px 16px;
+    border-radius: 10px;
+    background: rgba(37, 211, 102, 0.12);
+    color: #1e7e34;
+    margin-top: 12px;
+}
+
+.trainer-card {
+    text-align: center;
+    height: 100%;
+}
+
+.trainer-card .team-image {
+    background: linear-gradient(180deg, #eef3f7 0%, #fff 100%);
+    border-radius: 16px;
+    padding: 20px 20px 0;
+    overflow: visible;
+}
+
+.trainer-card .team-image img {
+    max-height: 300px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    display: block;
+}
+
+.trainer-card .trainer-role {
+    color: #F39F5F;
+    font-weight: 600;
+}
+
+@media (max-width: 991px) {
+    .header-right .main-header__search {
+        display: none;
+    }
+}
