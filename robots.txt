@@ -1,4 +1,13 @@
+# Quest For Education — https://questforeducation.in
+# Handwriting, Vedic Maths, Phonics & skill programs for kids
+
 User-agent: *
 Allow: /
 
-Sitemap: https://parmarkaushik15.github.io/quest/sitemap.xml
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://questforeducation.in/sitemap.xml

@@ -1,44 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://parmarkaushik15.github.io/quest/</loc>
+        <loc>https://questforeducation.in/</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://parmarkaushik15.github.io/quest/#about</loc>
+        <loc>https://questforeducation.in/#about</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://parmarkaushik15.github.io/quest/#courses</loc>
+        <loc>https://questforeducation.in/#courses</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://parmarkaushik15.github.io/quest/#events</loc>
-        <lastmod>2026-05-30</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://parmarkaushik15.github.io/quest/#trainers</loc>
+        <loc>https://questforeducation.in/#why-us</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://parmarkaushik15.github.io/quest/#faq</loc>
+        <loc>https://questforeducation.in/#achievements</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://questforeducation.in/#events</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://questforeducation.in/#trainers</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://questforeducation.in/#faq</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://parmarkaushik15.github.io/quest/#contact</loc>
+        <loc>https://questforeducation.in/#testimonials</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://questforeducation.in/#gallery</loc>
+        <lastmod>2026-05-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://questforeducation.in/#contact</loc>
         <lastmod>2026-05-30</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>

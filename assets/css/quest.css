@@ -254,6 +254,54 @@ a.course-fee-link:hover {
     gap: 20px;
 }
 
+/* Achievements – equal top/bottom padding (override template values-section-2 offsets) */
+#achievements.quest-achievements-section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 120px 0 !important;
+    overflow: visible;
+}
+
+@media (max-width: 1199px) {
+    #achievements.quest-achievements-section {
+        padding: 100px 0 !important;
+    }
+}
+
+@media (max-width: 991px) {
+    #achievements.quest-achievements-section {
+        padding: 80px 0 !important;
+    }
+}
+
+#achievements .section-title {
+    margin-bottom: 30px;
+}
+
+/* FAQ – equal top/bottom padding (override template faq-section offsets) */
+#faq.quest-faq-section {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 120px 0 !important;
+    overflow: visible;
+}
+
+@media (max-width: 1199px) {
+    #faq.quest-faq-section {
+        padding: 100px 0 !important;
+    }
+}
+
+@media (max-width: 991px) {
+    #faq.quest-faq-section {
+        padding: 80px 0 !important;
+    }
+}
+
+#faq .section-title {
+    margin-bottom: 30px;
+}
+
 .achievement-item {
     text-align: center;
     padding: 24px 16px;
@@ -278,6 +326,11 @@ a.course-fee-link:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 20px;
+}
+
+/* Gallery – same background as FAQ section */
+#gallery.quest-gallery-section {
+    background-color: #EFF5F6;
 }
 
 .gallery-item {
@@ -615,19 +668,6 @@ a.course-fee-link:hover {
 .contact-form-box textarea {
     min-height: 120px;
     resize: vertical;
-}
-
-.map-wrap {
-    border-radius: 16px;
-    overflow: hidden;
-    min-height: 280px;
-    background: #eef3f7;
-}
-
-.map-wrap iframe {
-    width: 100%;
-    height: 280px;
-    border: 0;
 }
 
 .whatsapp-float {
