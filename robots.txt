@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://parmarkaushik15.github.io/quest/sitemap.xml

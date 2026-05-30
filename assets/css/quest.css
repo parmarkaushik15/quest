@@ -1,5 +1,10 @@
 /* Quest For Education - Custom Styles */
 
+/* Preloader brand text (replaces template "Kidzu") */
+.loader:before {
+    content: "QUEST";
+}
+
 .quest-logo img {
     max-height: 58px;
     width: auto;
@@ -45,6 +50,26 @@ section[id] {
     color: #385469;
     font-weight: 700;
     font-size: 14px;
+}
+
+a.course-fee-link {
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+    max-width: 100%;
+    line-height: 1.4;
+}
+
+a.course-fee-link:hover {
+    background: rgba(243, 159, 95, 0.3);
+    color: #F39F5F;
+}
+
+.quest-section-lead {
+    max-width: 720px;
+    color: rgba(56, 84, 105, 0.78);
+    font-size: 17px;
+    line-height: 1.7;
 }
 
 /* Events section – normal document flow, no overlap */
