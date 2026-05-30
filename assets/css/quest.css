@@ -733,3 +733,55 @@ a.course-fee-link:hover {
         display: none;
     }
 }
+
+/* Footer bottom bar */
+.quest-footer-bottom {
+    background: #162433;
+    color: rgba(255, 255, 255, 0.92);
+    padding: 22px 0 24px;
+    margin-top: 10px;
+}
+
+.quest-footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.quest-footer-copy {
+    font-weight: 600;
+}
+
+.quest-footer-meta,
+.quest-footer-managed {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.quest-footer-bottom a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.quest-footer-bottom a:hover {
+    color: #F39F5F;
+}
+
+.quest-footer-sep {
+    margin: 0 8px;
+    opacity: 0.55;
+}
+
+@media (max-width: 575px) {
+    .quest-footer-bottom {
+        padding: 18px 0 20px;
+    }
+
+    .quest-footer-bottom p {
+        font-size: 13px;
+    }
+
+    .quest-footer-sep {
+        margin: 0 5px;
+    }
+}
