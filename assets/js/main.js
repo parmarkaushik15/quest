@@ -13,20 +13,20 @@
       $('#mobile-menu').meanmenu({
         meanMenuContainer: '.mobile-menu',
         meanScreenWidth: "1199",
-        meanExpand: ['<i class="far fa-plus"></i>'],
+        meanExpand: ['<i class="fa-solid fa-plus"></i>'],
     });
 
        $('#mobile-menus').meanmenu({
         meanMenuContainer: '.mobile-menus',
         meanScreenWidth: "19920",
-        meanExpand: ['<i class="far fa-plus"></i>'],
+        meanExpand: ['<i class="fa-solid fa-plus"></i>'],
     });
 
      $documentOn.on("click", ".mean-expand", function () {
         let icon = $(this).find("i");
 
         if (icon.hasClass("fa-plus")) {
-            icon.removeClass("fa-plus").addClass("fa-minus"); 
+            icon.removeClass("fa-plus").addClass("fa-minus");
         } else {
             icon.removeClass("fa-minus").addClass("fa-plus"); 
         }
@@ -92,26 +92,32 @@
        Video & Image Popup Js Start
     ================================ */
 
+      if ($.fn.magnificPopup && $(".img-popup").length) {
       $(".img-popup").magnificPopup({
         type: "image",
         gallery: {
           enabled: true,
         },
       });
+      }
 
+      if ($.fn.magnificPopup && $(".video-popup").length) {
       $(".video-popup").magnificPopup({
         type: "iframe",
         callbacks: {},
       });
+      }
   
       /* ================================
        Counterup Js Start
     ================================ */
 
+      if ($.fn.counterUp && $(".count").length) {
       $(".count").counterUp({
         delay: 15,
         time: 4000,
       });
+      }
   
       /* ================================
        Wow Animation Js Start
@@ -123,7 +129,7 @@
        Nice Select Js Start
     ================================ */
 
-    if ($('.single-select').length) {
+    if ($('.single-select').length && $.fn.niceSelect) {
         $('.single-select').niceSelect();
     }
 
@@ -131,7 +137,7 @@
        Parallaxie Js Start
     ================================ */
 
-      if ($('.parallaxie').length && $(window).width() > 991) {
+      if ($('.parallaxie').length && $.fn.parallaxie && $(window).width() > 991) {
           if ($(window).width() > 768) {
               $('.parallaxie').parallaxie({
                   speed: 0.55,
@@ -1108,8 +1114,8 @@
     /* ================================
        Preloader Js Start
     ================================ */
-    $windowOn.on('load', function() {
-        $(".preloader").fadeOut(600);
+    $documentOn.ready(function() {
+        $(".preloader").fadeOut(400);
     });
 
 

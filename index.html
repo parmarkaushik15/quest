@@ -236,15 +236,21 @@
         ]
     }
     </script>
+    <link rel="preload" href="assets/img/home-2/hero-image.webp" as="image" type="image/webp" fetchpriority="high">
+    <link rel="preload" href="assets/css/main.css" as="style">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/fa/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/fa/solid.min.css">
+    <link rel="stylesheet" href="assets/css/fa/brands.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/quest.css">
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/css/animate.css" media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+    </noscript>
 </head>
 <body class="body-bg-2">
 
@@ -252,7 +258,7 @@
 
     <div class="preloader"><div class="loader"></div></div>
 
-    <button id="back-top" class="back-to-top"><i class="fa-regular fa-arrow-up"></i></button>
+    <button id="back-top" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
 
     <div class="mouseCursor cursor-outer"></div>
     <div class="mouseCursor cursor-inner"></div>
@@ -264,9 +270,9 @@
                 <div class="offcanvas__content">
                     <div class="offcanvas__top d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo quest-logo">
-                            <a href="#home"><img src="images/logo.png" alt="Quest For Education"></a>
+                            <a href="#home"><picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="Quest For Education" width="714" height="350" decoding="async"></picture></a>
                         </div>
-                        <div class="offcanvas__close"><button><i class="fa-thin fa-times"></i></button></div>
+                        <div class="offcanvas__close"><button type="button" aria-label="Close menu"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button></div>
                     </div>
                     <p class="text d-none d-xl-block">Empowering young minds through Handwriting Improvement, Vedic Maths, Phonics, Olympiads, and Skill Development Programs since 2016.</p>
                     <div class="mobile-menu fix"></div>
@@ -310,7 +316,7 @@
             <div class="container">
                 <div class="mega-menu-wrapper">
                     <div class="header-main">
-                        <a href="#home" class="logo quest-logo"><img src="images/logo.png" alt="Quest For Education — Handwriting &amp; Skill Development for Kids"></a>
+                        <a href="#home" class="logo quest-logo"><picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="Quest For Education — Handwriting &amp; Skill Development for Kids" width="714" height="350" decoding="async"></picture></a>
                         <div class="mean__menu-wrapper">
                             <div class="main-menu">
                                 <nav id="mobile-menu" aria-label="Primary navigation">
@@ -345,24 +351,22 @@
         </div>
     </header>
 
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
         <main id="main-content">
 
             <!-- Hero -->
             <section id="home" class="hero-section hero-2">
-                <div class="star"><img src="assets/img/home-2/shape/star1.png" alt=""></div>
-                <div class="star2"><img src="assets/img/home-2/shape/star2.png" alt=""></div>
-                <div class="vec-shape float-bob-x"><img src="assets/img/home-2/shape/vec-1.png" alt=""></div>
-                <div class="vec-shape2 float-bob-x"><img src="assets/img/home-2/shape/vec-2.png" alt=""></div>
+                <div class="star"><picture><source srcset="assets/img/home-2/shape/star1.webp" type="image/webp"><img src="assets/img/home-2/shape/star1.png" alt="" loading="lazy" decoding="async"></picture></div>
+                <div class="star2"><picture><source srcset="assets/img/home-2/shape/star2.webp" type="image/webp"><img src="assets/img/home-2/shape/star2.png" alt="" loading="lazy" decoding="async"></picture></div>
+                <div class="vec-shape float-bob-x"><picture><source srcset="assets/img/home-2/shape/vec-1.webp" type="image/webp"><img src="assets/img/home-2/shape/vec-1.png" alt="" loading="lazy" decoding="async"></picture></div>
+                <div class="vec-shape2 float-bob-x"><picture><source srcset="assets/img/home-2/shape/vec-2.webp" type="image/webp"><img src="assets/img/home-2/shape/vec-2.png" alt="" loading="lazy" decoding="async"></picture></div>
                 <div class="container">
                     <div class="row g-4 align-items-center">
                         <div class="col-lg-6 order-2 order-lg-1 wow fadeInUp" data-wow-delay=".3s">
                             <div class="hero-image-items">
-                                <div class="thumb"><img src="assets/img/home-2/hero-image.jpg" alt="Children learning at Quest For Education"></div>
-                                <div class="hero-line"><img src="assets/img/home-2/hero-line.png" alt=""></div>
-                                <div class="shape1"><img src="assets/img/home-2/hero-shape1.png" alt=""></div>
-                                <div class="shape2"><img src="assets/img/home-2/hero-shape2.png" alt=""></div>
+                                <div class="thumb"><picture><source srcset="assets/img/home-2/hero-image.webp" type="image/webp"><img src="assets/img/home-2/hero-image.jpg" alt="Children learning at Quest For Education" width="738" height="512" decoding="async" fetchpriority="high"></picture></div>
+                                <div class="hero-line"><picture><source srcset="assets/img/home-2/hero-line.webp" type="image/webp"><img src="assets/img/home-2/hero-line.png" alt="" loading="lazy" decoding="async"></picture></div>
+                                <div class="shape1"><picture><source srcset="assets/img/home-2/hero-shape1.webp" type="image/webp"><img src="assets/img/home-2/hero-shape1.png" alt="" loading="lazy" decoding="async"></picture></div>
+                                <div class="shape2"><picture><source srcset="assets/img/home-2/hero-shape2.webp" type="image/webp"><img src="assets/img/home-2/hero-shape2.png" alt="" loading="lazy" decoding="async"></picture></div>
                             </div>
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2">
@@ -393,7 +397,7 @@
 
             <!-- Marquee -->
             <div class="marquee-section2">
-                <div class="bg-shape"><img src="assets/img/home-2/shape/marque-bg.png" alt=""></div>
+                <div class="bg-shape"><picture><source srcset="assets/img/home-2/shape/marque-bg.webp" type="image/webp"><img src="assets/img/home-2/shape/marque-bg.png" alt="" width="1410" height="490" loading="lazy" decoding="async"></picture></div>
                 <div class="marquee">
                     <div class="marquee-group">
                         <div class="text2"><img src="assets/img/home-2/shape/marque-star.svg" alt=""> Handwriting • Vedic Maths • Phonics • Olympiads • Summer Camp • Skill Development</div>
@@ -412,7 +416,7 @@
 
             <!-- About -->
             <section id="about" class="about-section-2 fix section-padding">
-                <div class="about-pencil bz-gsap-animate-circle"><img src="assets/img/home-2/shape/about-pencil.png" alt=""></div>
+                <div class="about-pencil bz-gsap-animate-circle"><picture><source srcset="assets/img/home-2/shape/about-pencil.webp" type="image/webp"><img src="assets/img/home-2/shape/about-pencil.png" alt="" loading="lazy" decoding="async"></picture></div>
                 <div class="container">
                     <div class="about-wrapper-2">
                         <div class="row g-4 align-items-center">
@@ -452,9 +456,9 @@
                             </div>
                             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="about-image">
-                                    <img src="assets/img/home-2/about-image.png" alt="Quest For Education students">
-                                    <div class="shape1"><img src="assets/img/home-2/shape/about-shape1.png" alt=""></div>
-                                    <div class="shape2"><img src="assets/img/home-2/shape/about-shape2.png" alt=""></div>
+                                    <picture><source srcset="assets/img/home-2/about-image.webp" type="image/webp"><img src="assets/img/home-2/about-image.png" alt="Quest For Education students" loading="lazy" decoding="async"></picture>
+                                    <div class="shape1"><picture><source srcset="assets/img/home-2/shape/about-shape1.webp" type="image/webp"><img src="assets/img/home-2/shape/about-shape1.png" alt="" loading="lazy" decoding="async"></picture></div>
+                                    <div class="shape2"><picture><source srcset="assets/img/home-2/shape/about-shape2.webp" type="image/webp"><img src="assets/img/home-2/shape/about-shape2.png" alt="" loading="lazy" decoding="async"></picture></div>
                                 </div>
                             </div>
                         </div>
@@ -469,20 +473,20 @@
                         <div class="line"></div><p>Why Choose Quest For Education</p><div class="line"></div>
                     </div>
                     <div class="school-facilities-wrapper">
-                        <div class="school-facilities-box-items wow fadeInUp"><div class="thumb"><img src="assets/img/home-2/shape/box-1.png" alt=""><div class="icon"><img src="assets/img/icon/icon1.svg" alt=""></div></div><h2 class="title">Online Classes</h2></div>
-                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".2s"><div class="thumb"><img src="assets/img/home-2/shape/box-2.png" alt=""><div class="icon"><img src="assets/img/icon/icon2.svg" alt=""></div></div><h2 class="title">Affordable Fees</h2></div>
-                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".4s"><div class="thumb"><img src="assets/img/home-2/shape/box-3.png" alt=""><div class="icon"><img src="assets/img/icon/icon3.svg" alt=""></div></div><h2 class="title">Expert Trainers</h2></div>
-                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".6s"><div class="thumb"><img src="assets/img/home-2/shape/box-4.png" alt=""><div class="icon"><img src="assets/img/icon/icon4.svg" alt=""></div></div><h2 class="title">Certificates</h2></div>
-                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".7s"><div class="thumb"><img src="assets/img/home-2/shape/box-5.png" alt=""><div class="icon"><img src="assets/img/icon/icon5.svg" alt=""></div></div><h2 class="title">Personal Attention</h2></div>
-                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".9s"><div class="thumb"><img src="assets/img/home-2/shape/box-6.png" alt=""><div class="icon"><img src="assets/img/icon/icon6.svg" alt=""></div></div><h2 class="title">Proven Results</h2></div>
+                        <div class="school-facilities-box-items wow fadeInUp"><div class="thumb"><picture><source srcset="assets/img/home-2/shape/box-1.webp" type="image/webp"><img src="assets/img/home-2/shape/box-1.png" alt="" loading="lazy" decoding="async"></picture><div class="icon"><img src="assets/img/icon/icon1.svg" alt=""></div></div><h2 class="title">Online Classes</h2></div>
+                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".2s"><div class="thumb"><picture><source srcset="assets/img/home-2/shape/box-2.webp" type="image/webp"><img src="assets/img/home-2/shape/box-2.png" alt="" loading="lazy" decoding="async"></picture><div class="icon"><img src="assets/img/icon/icon2.svg" alt=""></div></div><h2 class="title">Affordable Fees</h2></div>
+                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".4s"><div class="thumb"><picture><source srcset="assets/img/home-2/shape/box-3.webp" type="image/webp"><img src="assets/img/home-2/shape/box-3.png" alt="" loading="lazy" decoding="async"></picture><div class="icon"><img src="assets/img/icon/icon3.svg" alt=""></div></div><h2 class="title">Expert Trainers</h2></div>
+                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".6s"><div class="thumb"><picture><source srcset="assets/img/home-2/shape/box-4.webp" type="image/webp"><img src="assets/img/home-2/shape/box-4.png" alt="" loading="lazy" decoding="async"></picture><div class="icon"><img src="assets/img/icon/icon4.svg" alt=""></div></div><h2 class="title">Certificates</h2></div>
+                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".7s"><div class="thumb"><picture><source srcset="assets/img/home-2/shape/box-5.webp" type="image/webp"><img src="assets/img/home-2/shape/box-5.png" alt="" loading="lazy" decoding="async"></picture><div class="icon"><img src="assets/img/icon/icon5.svg" alt=""></div></div><h2 class="title">Personal Attention</h2></div>
+                        <div class="school-facilities-box-items wow fadeInUp" data-wow-delay=".9s"><div class="thumb"><picture><source srcset="assets/img/home-2/shape/box-6.webp" type="image/webp"><img src="assets/img/home-2/shape/box-6.png" alt="" loading="lazy" decoding="async"></picture><div class="icon"><img src="assets/img/icon/icon6.svg" alt=""></div></div><h2 class="title">Proven Results</h2></div>
                     </div>
                 </div>
             </section>
 
             <!-- Courses -->
             <section id="courses" class="program-section-2 section-padding">
-                <div class="top-line-1"><img src="assets/img/home-2/shape/top-line-1.png" alt=""></div>
-                <div class="bottom-line-1"><img src="assets/img/home-2/shape/bottom-line-2.png" alt=""></div>
+                <div class="top-line-1"><picture><source srcset="assets/img/home-2/shape/top-line-1.webp" type="image/webp"><img src="assets/img/home-2/shape/top-line-1.png" alt="" loading="lazy" decoding="async"></picture></div>
+                <div class="bottom-line-1"><picture><source srcset="assets/img/home-2/shape/bottom-line-2.webp" type="image/webp"><img src="assets/img/home-2/shape/bottom-line-2.png" alt="" loading="lazy" decoding="async"></picture></div>
                 <div class="container">
                     <div class="section-title text-center">
                         <span class="sec-sub tz-sub-tilte tz-sub-anim tx-subTitle">Our Courses</span>
@@ -492,9 +496,9 @@
                     <div class="row">
                         <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="program-box-items-2">
-                                <div class="thumb"><img src="assets/img/home-2/program1.png" alt="Handwriting Improvement"></div>
+                                <div class="thumb"><picture><source srcset="assets/img/home-2/program1.webp" type="image/webp"><img src="assets/img/home-2/program1.png" alt="Handwriting Improvement" width="193" height="300" loading="lazy" decoding="async"></picture></div>
                                 <div class="content">
-                                    <div class="hand-image"><img src="assets/img/home-2/hand-1.png" alt=""></div>
+                                    <div class="hand-image"><picture><source srcset="assets/img/home-2/hand-1.webp" type="image/webp"><img src="assets/img/home-2/hand-1.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="year-text">Ages 5+</div>
                                     <h3 class="title"><a href="#contact" class="scroll-contact">Handwriting Improvement</a></h3>
                                     <p>Beautiful handwriting for better academic success. English & Hindi letter formation, speed, and neat presentation.</p>
@@ -504,9 +508,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                             <div class="program-box-items-2 active">
-                                <div class="thumb"><img src="assets/img/home-2/program2.png" alt="Vedic Maths"></div>
+                                <div class="thumb"><picture><source srcset="assets/img/home-2/program2.webp" type="image/webp"><img src="assets/img/home-2/program2.png" alt="Vedic Maths" width="197" height="211" loading="lazy" decoding="async"></picture></div>
                                 <div class="content style-2">
-                                    <div class="hand-image"><img src="assets/img/home-2/hand-2.png" alt=""></div>
+                                    <div class="hand-image"><picture><source srcset="assets/img/home-2/hand-2.webp" type="image/webp"><img src="assets/img/home-2/hand-2.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="year-text">Ages 6+</div>
                                     <h3 class="title"><a href="#contact" class="scroll-contact">Vedic Maths</a></h3>
                                     <p>Learn faster calculations and improve logical thinking with mental math shortcuts and competitive exam prep.</p>
@@ -516,9 +520,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                             <div class="program-box-items-2">
-                                <div class="thumb style-left"><img src="assets/img/home-2/program3.png" alt="Phonics"></div>
+                                <div class="thumb style-left"><picture><source srcset="assets/img/home-2/program3.webp" type="image/webp"><img src="assets/img/home-2/program3.png" alt="Phonics" width="252" height="211" loading="lazy" decoding="async"></picture></div>
                                 <div class="content style-3">
-                                    <div class="hand-image"><img src="assets/img/home-2/hand-3.png" alt=""></div>
+                                    <div class="hand-image"><picture><source srcset="assets/img/home-2/hand-3.webp" type="image/webp"><img src="assets/img/home-2/hand-3.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="year-text">KG & Primary</div>
                                     <h3 class="title"><a href="#contact" class="scroll-contact">Phonics</a></h3>
                                     <p>Build strong reading, pronunciation, vocabulary, and spelling foundations for early literacy success.</p>
@@ -528,9 +532,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="program-box-items-2">
-                                <div class="thumb"><img src="assets/img/home-2/program4.png" alt="Print Style Writing"></div>
+                                <div class="thumb"><picture><source srcset="assets/img/home-2/program4.webp" type="image/webp"><img src="assets/img/home-2/program4.png" alt="Print Style Writing" width="207" height="232" loading="lazy" decoding="async"></picture></div>
                                 <div class="content style-4">
-                                    <div class="hand-image"><img src="assets/img/home-2/hand-4.png" alt=""></div>
+                                    <div class="hand-image"><picture><source srcset="assets/img/home-2/hand-4.webp" type="image/webp"><img src="assets/img/home-2/hand-4.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="year-text">All Ages</div>
                                     <h3 class="title"><a href="#contact" class="scroll-contact">Print Style Writing</a></h3>
                                     <p>Master clean, stylish, and uniform printed handwriting with professional character formation.</p>
@@ -540,9 +544,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                             <div class="program-box-items-2">
-                                <div class="thumb"><img src="assets/img/home-2/program5.png" alt="Summer Camp"></div>
+                                <div class="thumb"><picture><source srcset="assets/img/home-2/program5.webp" type="image/webp"><img src="assets/img/home-2/program5.png" alt="Summer Camp" width="200" height="222" loading="lazy" decoding="async"></picture></div>
                                 <div class="content style-2">
-                                    <div class="hand-image"><img src="assets/img/home-2/hand-1.png" alt=""></div>
+                                    <div class="hand-image"><picture><source srcset="assets/img/home-2/hand-1.webp" type="image/webp"><img src="assets/img/home-2/hand-1.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="year-text">Ages 5+</div>
                                     <h3 class="title"><a href="#events" class="scroll-contact">Summer Camp</a></h3>
                                     <p>7 days of fun-filled learning — handwriting, Vedic Maths, phonics, creativity, and confidence building.</p>
@@ -552,9 +556,9 @@
                         </div>
                         <div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
                             <div class="program-box-items-2">
-                                <div class="thumb"><img src="assets/img/home-2/program6.png" alt="Olympiads"></div>
+                                <div class="thumb"><picture><source srcset="assets/img/home-2/program6.webp" type="image/webp"><img src="assets/img/home-2/program6.png" alt="Olympiads" width="210" height="223" loading="lazy" decoding="async"></picture></div>
                                 <div class="content style-4">
-                                    <div class="hand-image"><img src="assets/img/home-2/hand-3.png" alt=""></div>
+                                    <div class="hand-image"><picture><source srcset="assets/img/home-2/hand-3.webp" type="image/webp"><img src="assets/img/home-2/hand-3.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="year-text">Ages 4-15</div>
                                     <h3 class="title"><a href="#events" class="scroll-contact">Olympiads</a></h3>
                                     <p>Participate, compete, and grow in Handwriting Olympiad with certificates, gifts, and skill assessment.</p>
@@ -573,7 +577,7 @@
                         <div class="row g-4">
                             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="choose-us-thumb">
-                                    <div class="thumb"><img src="assets/img/home-2/choose-us.jpg" alt="Why choose Quest For Education"></div>
+                                    <div class="thumb"><picture><source srcset="assets/img/home-2/choose-us.webp" type="image/webp"><img src="assets/img/home-2/choose-us.jpg" alt="Why choose Quest For Education" loading="lazy" decoding="async"></picture></div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -584,8 +588,8 @@
                                     </div>
                                     <p class="choose-text wow fadeInUp" data-wow-delay=".3s">We combine experienced trainers, proven teaching methods, and a child-centric approach to deliver measurable improvement in handwriting, calculations, reading, and confidence.</p>
                                     <ul class="wow fadeInUp" data-wow-delay=".5s">
-                                        <li><div class="icon"><img src="assets/img/home-2/choose-icon1.png" alt=""></div><div class="title"><h3 class="icon-title">Experienced & Certified Trainers</h3></div></li>
-                                        <li><div class="icon"><img src="assets/img/home-2/choose-icon2.png" alt=""></div><div class="title"><h3 class="icon-title">Online & Offline Learning Options</h3></div></li>
+                                        <li><div class="icon"><picture><source srcset="assets/img/home-2/choose-icon1.webp" type="image/webp"><img src="assets/img/home-2/choose-icon1.png" alt="" loading="lazy" decoding="async"></picture></div><div class="title"><h3 class="icon-title">Experienced & Certified Trainers</h3></div></li>
+                                        <li><div class="icon"><picture><source srcset="assets/img/home-2/choose-icon2.webp" type="image/webp"><img src="assets/img/home-2/choose-icon2.png" alt="" loading="lazy" decoding="async"></picture></div><div class="title"><h3 class="icon-title">Online & Offline Learning Options</h3></div></li>
                                     </ul>
                                     <div class="skill-feature-items">
                                         <div class="skill-feature wow fadeInUp" data-wow-delay=".3s">
@@ -636,7 +640,7 @@
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                             <div class="event-card-flyer h-100">
                                 <div class="event-card-flyer-img">
-                                    <img src="images/handwriting-olympiad-flyer.png" alt="Handwriting Olympiad Competition">
+                                    <picture><source srcset="images/handwriting-olympiad-flyer.webp" type="image/webp"><img src="images/handwriting-olympiad-flyer.png" alt="Handwriting Olympiad Competition" width="723" height="1024" loading="lazy" decoding="async"></picture>
                                 </div>
                                 <div class="event-card-body">
                                     <span class="event-badge">Online Olympiad</span>
@@ -655,7 +659,7 @@
                         <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
                             <div class="event-card-flyer h-100">
                                 <div class="event-card-flyer-img">
-                                    <img src="images/summer-camp-flyer.png" alt="Amazing Summer Camp">
+                                    <picture><source srcset="images/summer-camp-flyer.webp" type="image/webp"><img src="images/summer-camp-flyer.png" alt="Amazing Summer Camp" width="682" height="1024" loading="lazy" decoding="async"></picture>
                                 </div>
                                 <div class="event-card-body">
                                     <span class="event-badge event-badge-summer">Summer Camp</span>
@@ -673,7 +677,7 @@
                         </div>
                     </div>
                     <div class="quest-cta-banner wow fadeInUp" data-wow-delay=".3s">
-                        <div class="quest-cta-banner-bg" style="background-image: url('assets/img/home-2/special-image.jpg');"></div>
+                        <div class="quest-cta-banner-bg" role="presentation" aria-hidden="true"></div>
                         <div class="quest-cta-banner-content text-center">
                             <span class="quest-cta-label">Limited Seats</span>
                             <h3>Give Your Child the Right Skills to Shine Brighter Every Day!</h3>
@@ -696,7 +700,7 @@
                     <div class="row g-4 justify-content-center">
                         <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".2s">
                             <div class="contact-info-box trainer-card">
-                                <div class="team-image mb-3"><img src="assets/img/home-2/team-01.png" alt="Sakshi Khurana"></div>
+                                <div class="team-image mb-3"><picture><source srcset="assets/img/home-2/team-01.webp" type="image/webp"><img src="assets/img/home-2/team-01.png" alt="Sakshi Khurana" width="390" height="434" loading="lazy" decoding="async"></picture></div>
                                 <h3>Sakshi Khurana</h3>
                                 <p class="trainer-role">Certified Trainer & Centre Chief</p>
                                 <p>Expert in handwriting improvement and child skill development with years of experience guiding young learners.</p>
@@ -705,7 +709,7 @@
                         </div>
                         <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay=".4s">
                             <div class="contact-info-box trainer-card">
-                                <div class="team-image mb-3"><img src="assets/img/home-2/team-02.png" alt="Nancy Arora"></div>
+                                <div class="team-image mb-3"><picture><source srcset="assets/img/home-2/team-02.webp" type="image/webp"><img src="assets/img/home-2/team-02.png" alt="Nancy Arora" width="506" height="696" loading="lazy" decoding="async"></picture></div>
                                 <h3>Nancy Arora</h3>
                                 <p class="trainer-role">Certified Handwriting Coach & Chief Trainer</p>
                                 <p>Specialist in English & Hindi handwriting, print style writing, and personalized coaching for every child.</p>
@@ -722,7 +726,7 @@
                     <div class="row g-4 align-items-center">
                         <div class="col-lg-6">
                             <div class="faq-image style-2 wow fadeInUp" data-wow-delay=".3s">
-                                <img src="assets/img/home-2/faq-image.png" alt="FAQ">
+                                <picture><source srcset="assets/img/home-2/faq-image.webp" type="image/webp"><img src="assets/img/home-2/faq-image.png" alt="FAQ" width="718" height="678" loading="lazy" decoding="async"></picture>
                             </div>
                         </div>
                         <div class="col-lg-6">
@@ -766,9 +770,9 @@
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="testimonial-box-items-2">
-                                    <div class="bg-thumb"><img src="assets/img/home-2/testi-bg.png" alt=""></div>
+                                    <div class="bg-thumb"><picture><source srcset="assets/img/home-2/testi-bg.webp" type="image/webp"><img src="assets/img/home-2/testi-bg.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="content">
-                                        <div class="client-image"><img src="assets/img/home-2/client-1.png" alt=""></div>
+                                        <div class="client-image"><picture><source srcset="assets/img/home-2/client-1.webp" type="image/webp"><img src="assets/img/home-2/client-1.png" alt="" loading="lazy" decoding="async"></picture></div>
                                         <h3 class="title">Parent of Class 3 Student</h3>
                                         <p>My child's handwriting improved dramatically within weeks. The trainers are patient, caring, and truly understand how children learn.</p>
                                     </div>
@@ -776,9 +780,9 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-box-items-2">
-                                    <div class="bg-thumb"><img src="assets/img/home-2/testi-bg.png" alt=""></div>
+                                    <div class="bg-thumb"><picture><source srcset="assets/img/home-2/testi-bg.webp" type="image/webp"><img src="assets/img/home-2/testi-bg.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="content">
-                                        <div class="client-image"><img src="assets/img/home-2/client-2.png" alt=""></div>
+                                        <div class="client-image"><picture><source srcset="assets/img/home-2/client-2.webp" type="image/webp"><img src="assets/img/home-2/client-2.png" alt="" loading="lazy" decoding="async"></picture></div>
                                         <h3 class="title">Parent of Vedic Maths Student</h3>
                                         <p>The Vedic Maths program boosted my son's calculation speed and confidence. He now enjoys solving math problems!</p>
                                     </div>
@@ -786,9 +790,9 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-box-items-2">
-                                    <div class="bg-thumb"><img src="assets/img/home-2/testi-bg.png" alt=""></div>
+                                    <div class="bg-thumb"><picture><source srcset="assets/img/home-2/testi-bg.webp" type="image/webp"><img src="assets/img/home-2/testi-bg.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="content">
-                                        <div class="client-image"><img src="assets/img/home-2/client-3.png" alt=""></div>
+                                        <div class="client-image"><picture><source srcset="assets/img/home-2/client-3.webp" type="image/webp"><img src="assets/img/home-2/client-3.png" alt="" loading="lazy" decoding="async"></picture></div>
                                         <h3 class="title">Parent of Phonics Student</h3>
                                         <p>Quest For Education helped my daughter develop strong reading and pronunciation skills. Highly recommended for young learners.</p>
                                     </div>
@@ -796,9 +800,9 @@
                             </div>
                             <div class="swiper-slide">
                                 <div class="testimonial-box-items-2">
-                                    <div class="bg-thumb"><img src="assets/img/home-2/testi-bg.png" alt=""></div>
+                                    <div class="bg-thumb"><picture><source srcset="assets/img/home-2/testi-bg.webp" type="image/webp"><img src="assets/img/home-2/testi-bg.png" alt="" loading="lazy" decoding="async"></picture></div>
                                     <div class="content">
-                                        <div class="client-image"><img src="assets/img/home-2/client-4.png" alt=""></div>
+                                        <div class="client-image"><picture><source srcset="assets/img/home-2/client-4.webp" type="image/webp"><img src="assets/img/home-2/client-4.png" alt="" loading="lazy" decoding="async"></picture></div>
                                         <h3 class="title">Summer Camp Parent</h3>
                                         <p>The summer camp was a perfect mix of fun and learning. My child came home excited every day with new skills and confidence.</p>
                                     </div>
@@ -818,10 +822,10 @@
                         <h2 class="tx-title sec_title tz-itm-title tz-itm-anim">Learning in Action</h2>
                     </div>
                     <div class="gallery-grid wow fadeInUp" data-wow-delay=".3s">
-                        <div class="gallery-item"><img src="assets/img/home-2/extra-activities-1.jpg" alt="Classroom activities"></div>
-                        <div class="gallery-item"><img src="assets/img/home-2/extra-activities-2.jpg" alt="Summer camp"></div>
-                        <div class="gallery-item"><img src="assets/img/home-2/extra-activities-3.jpg" alt="Training sessions"></div>
-                        <div class="gallery-item"><img src="assets/img/home-2/program1.png" alt="Handwriting class"></div>
+                        <div class="gallery-item"><picture><source srcset="assets/img/home-2/extra-activities-1.webp" type="image/webp"><img src="assets/img/home-2/extra-activities-1.jpg" alt="Classroom activities" loading="lazy" decoding="async"></picture></div>
+                        <div class="gallery-item"><picture><source srcset="assets/img/home-2/extra-activities-2.webp" type="image/webp"><img src="assets/img/home-2/extra-activities-2.jpg" alt="Summer camp" loading="lazy" decoding="async"></picture></div>
+                        <div class="gallery-item"><picture><source srcset="assets/img/home-2/extra-activities-3.webp" type="image/webp"><img src="assets/img/home-2/extra-activities-3.jpg" alt="Training sessions" loading="lazy" decoding="async"></picture></div>
+                        <div class="gallery-item"><picture><source srcset="assets/img/home-2/program1.webp" type="image/webp"><img src="assets/img/home-2/program1.png" alt="Handwriting class" width="193" height="300" loading="lazy" decoding="async"></picture></div>
                     </div>
                 </div>
             </section>
@@ -907,13 +911,13 @@
 
             <!-- Footer -->
             <footer class="footer-section">
-                <div class="footer-top"><img src="assets/img/home-1/footer-top.png" alt=""></div>
+                <div class="footer-top"><picture><source srcset="assets/img/home-1/footer-top.webp" type="image/webp"><img src="assets/img/home-1/footer-top.png" alt="" loading="lazy" decoding="async"></picture></div>
                 <div class="container">
                     <div class="footer-info-wrapper">
                         <div class="row">
                             <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="footer-content">
-                                    <a href="#home" class="footer-logo quest-logo"><img src="images/logo.png" alt="Quest For Education"></a>
+                                    <a href="#home" class="footer-logo quest-logo"><picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt="Quest For Education" width="714" height="350" loading="lazy" decoding="async"></picture></a>
                                     <p>Quest For Education empowers children aged 4–15 with handwriting improvement, Vedic Maths, phonics, print style writing, summer camps, and handwriting olympiads. Online &amp; offline classes with certified trainers. Building Skills. Building Future. Since 2016.</p>
                                     <div class="social-icon d-flex align-items-center">
                                         <a href="https://wa.me/917417522307" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
@@ -991,31 +995,18 @@
                 </div>
             </footer>
 
-        </div>
-    </div>
 </div>
 
 <a href="https://wa.me/917417522307?text=Hello%20Quest%20For%20Education%2C%20I%20would%20like%20to%20know%20more%20about%20your%20programs." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-<script src="assets/js/jquery-3.7.1.min.js"></script>
-<script src="assets/js/viewport.jquery.js"></script>
-<script src="assets/js/bootstrap.bundle.min.js"></script>
-<script src="assets/js/gsap.min.js"></script>
-<script src="assets/js/ScrollTrigger.min.js"></script>
-<script src="assets/js/ScrollSmoother.min.js"></script>
-<script src="assets/js/ScrollToPlugin.min.js"></script>
-<script src="assets/js/SplitText.min.js"></script>
-<script src="assets/js/TextPlugin.js"></script>
-<script src="assets/js/chroma.min.js"></script>
-<script src="assets/js/jquery.nice-select.min.js"></script>
-<script src="assets/js/jquery.waypoints.js"></script>
-<script src="assets/js/jquery.counterup.min.js"></script>
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/jquery.meanmenu.min.js"></script>
-<script src="assets/js/parallaxie.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/quest.js"></script>
+<script src="assets/js/jquery-3.7.1.min.js" defer></script>
+<script src="assets/js/gsap.min.js" defer></script>
+<script src="assets/js/ScrollTrigger.min.js" defer></script>
+<script src="assets/js/SplitText.min.js" defer></script>
+<script src="assets/js/swiper-bundle.min.js" defer></script>
+<script src="assets/js/jquery.meanmenu.min.js" defer></script>
+<script src="assets/js/wow.min.js" defer></script>
+<script src="assets/js/main.min.js" defer></script>
+<script src="assets/js/quest.min.js" defer></script>
 </body>
 </html>

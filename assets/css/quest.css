@@ -179,6 +179,7 @@ a.course-fee-link:hover {
 .quest-cta-banner-bg {
     position: absolute;
     inset: 0;
+    background-image: url("../img/home-2/special-image.webp");
     background-size: cover;
     background-position: center;
 }
@@ -783,5 +784,29 @@ a.course-fee-link:hover {
 
     .quest-footer-sep {
         margin: 0 5px;
+    }
+}
+
+/* Performance: responsive images & reduced motion */
+picture,
+picture img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 1199px), (hover: none) {
+    .mouseCursor {
+        display: none !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    .preloader {
+        display: none !important;
     }
 }
